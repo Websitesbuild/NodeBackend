@@ -7,7 +7,7 @@ phases:
       - echo $DOCKERHUB_PASS | docker login -u $DOCKERHUB_USER --password-stdin
 
       - REPOSITORY_URI="docker.io/nro576809/node-backend"
-      - CONTAINER_NAME="backend-container"
+      - CONTAINER_NAME="backendcontainer"
 
       # Use commit ID as image tag
       - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
